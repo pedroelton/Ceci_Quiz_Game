@@ -229,7 +229,7 @@
   }
 }
 
-@media (min-width: 1025px) and (max-width: 1440px) {
+@media (min-width: 1025px) and (max-width: 1365px) {
   /* Laptops */
   .landingPage-content {
     width: 100%;
@@ -239,6 +239,38 @@
     display: flex;
     justify-content: space-between;
     align-items: center;
+  }
+  .landingPage-content_right {
+    width: 50vw;
+    height: 100vw;
+    background-size: auto 60%;
+    background-repeat: no-repeat;
+  }
+  .landingPage-content_left h1 {
+    font-size: 2.5rem;
+    z-index: 2;
+  }
+
+  .landingPage-content_left p {
+    font-size: 1.5rem;
+  }
+}
+@media (min-width: 1366px) {
+  /* Laptops */
+  .landingPage-content {
+    width: 100%;
+    height: 100%;
+    padding: 0 32px;
+    background-image: none;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+  .landingPage-content_right {
+    width: 50vw;
+    height: 100vw;
+    background-size: auto 70%;
+    background-repeat: no-repeat;
   }
   .landingPage-content_left h1 {
     font-size: 2.5rem;

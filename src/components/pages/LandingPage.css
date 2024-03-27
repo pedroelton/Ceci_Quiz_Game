@@ -49,6 +49,7 @@
   flex-direction: column;
   gap: 16px;
 }
+
 .landingPage-content_text {
   display: flex;
   height: 100%;
@@ -209,6 +210,9 @@
   }
   .landingPage-content_left h1 {
     text-align: center;
+    .landingPage-content_left h1 {
+      font-size: 2rem;
+    }
   }
 
   .landingPage-content_left p {

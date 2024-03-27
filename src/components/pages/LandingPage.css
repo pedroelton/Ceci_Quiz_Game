@@ -241,12 +241,11 @@
     align-items: center;
   }
   .landingPage-content_left h1 {
-    font-size: 3rem;
+    font-size: 2.5rem;
     z-index: 2;
   }
 
   .landingPage-content_left p {
-    text-align: center;
     font-size: 1.5rem;
   }
 }

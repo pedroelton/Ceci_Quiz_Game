@@ -247,6 +247,7 @@
     background-repeat: no-repeat;
   }
   .landingPage-content_left h1 {
+    width: 16ch;
     font-size: 2.5rem;
     z-index: 2;
   }

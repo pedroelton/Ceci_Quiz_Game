@@ -1,7 +1,6 @@
 import React from "react";
 import "./LandingPage.css";
 import Logo from "../Logo";
-import schoolWallpaper from "../../img/img-ui/schoolWallpaper.webp";
 
 export default function LandingPage({ onButtonClick }) {
   return (

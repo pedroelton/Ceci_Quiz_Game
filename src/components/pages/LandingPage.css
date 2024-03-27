@@ -211,12 +211,13 @@
 
   .landingPage-content_left h1 {
     text-align: center;
-    font-size: 2.5rem;
+    font-size: 3rem;
+    z-index: 2;
   }
 
   .landingPage-content_left p {
     text-align: center;
-    font-size: 1rem;
+    font-size: 1.5rem;
   }
   .landingPage-content_left button {
     width: 100%;
@@ -240,7 +241,12 @@
     align-items: center;
   }
   .landingPage-content_left h1 {
-    font-size: 2.5rem;
+    font-size: 3rem;
     z-index: 2;
+  }
+
+  .landingPage-content_left p {
+    text-align: center;
+    font-size: 1.5rem;
   }
 }

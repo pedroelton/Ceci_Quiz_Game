@@ -22,6 +22,7 @@
   flex-direction: column;
   align-items: center;
 }
+
 .landingPage-navbar {
   width: 100%;
   padding: 32px;
@@ -129,6 +130,9 @@
 /* Media Queries */
 
 @media (min-width: 320px) and (max-width: 767px) {
+  .landingPage-container {
+    height: 100%;
+  }
   .landingPage-content_left {
     justify-content: space-between;
     height: 100%;

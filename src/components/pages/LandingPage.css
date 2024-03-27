@@ -131,7 +131,8 @@
 
 @media (min-width: 320px) and (max-width: 767px) {
   .landingPage-container {
-    height: 100%;
+    height: 90vh;
+    max-height: 100vh;
   }
   .landingPage-content_left {
     justify-content: space-between;
@@ -158,6 +159,7 @@
   .landingPage-content_left button {
     width: 100%;
     max-width: 100%;
+    margin-bottom: 2rem;
   }
   .landingPage-container footer {
     text-align: center;

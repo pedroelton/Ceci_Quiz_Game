@@ -208,11 +208,10 @@
   .landingPage-content_right {
     display: none;
   }
+
   .landingPage-content_left h1 {
     text-align: center;
-    .landingPage-content_left h1 {
-      font-size: 2rem;
-    }
+    font-size: 2.5rem;
   }
 
   .landingPage-content_left p {
@@ -238,5 +237,9 @@
     display: flex;
     justify-content: space-between;
     align-items: center;
+  }
+  .landingPage-content_left h1 {
+    font-size: 2rem;
+    z-index: 2;
   }
 }

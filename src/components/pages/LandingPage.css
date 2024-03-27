@@ -221,6 +221,7 @@
   .landingPage-content_left button {
     width: 100%;
     max-width: 100%;
+    margin-bottom: 2rem;
   }
   .landingPage-container footer {
     text-align: center;

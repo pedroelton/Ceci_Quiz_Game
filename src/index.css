@@ -1,142 +1,18 @@
-:root {
-  --primary: #990000;
-  --secondary: #3a519f;
-  --accent: #b0cb1f;
-  --dark: #1b1c1e;
-  --light: #ffffff;
-  --light-transparent: #ffffffd8;
-}
-
 body {
   margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "Roboto", "Oxygen",
+    "Ubuntu", "Cantarell", "Fira Sans", "Droid Sans", "Helvetica Neue",
     sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
   font-size: 16px;
 }
 
-* {
-  font-family: "Poppins", sans-serif;
-  color: var(--dark);
-  padding: 0;
-  margin: 0;
-  box-sizing: border-box;
-}
-
 body {
-  /* background-color: var(--light); */
-  background-image: url("./img/img-ui/CeciWallpaper\ test.png");
-  background-position: center;
-  background-repeat: no-repeat;
-  background-size: cover;
   display: flex;
   justify-content: center;
   align-items: center;
   min-height: 100vh;
-}
-
-.app {
-  background-color: var(--light-transparent);
-  width: 80vw;
-  min-height: 12rem;
-  height: 60vh;
-  border-radius: 1rem;
-  padding: 20px;
-  box-shadow: 0 1.25rem 2.5rem rgba(0, 0, 0, 0.3);
-  border: 1px solid rgba(0, 0, 0, 0.1);
-  display: flex;
-  flex-direction: column;
-  justify-content: space-evenly;
-}
-
-.score-section {
-  display: flex;
-  height: 100%;
-  flex-direction: column;
-  align-items: center;
-  justify-content: space-between;
-  
-}
-.score-section h2 {
-  font-size: 4rem;
-  width: 20ch;
-  text-align: center;
-}
-
-/* QUESTION/TIMER/LEFT SECTION */
-.question-section {
-  width: 100%;
-  position: relative;
-}
-
-.question-count {
-  margin-bottom: 1.5rem;
-}
-
-.question-count span {
-  font-size: 1.75rem;
-}
-
-.question-text {
-  margin-bottom: 1rem;
-  font-size: 2rem;
-  font-weight: 600;
-}
-
-.timer-text {
-  background: var(--accent);
-  padding: 1rem;
-  margin-top: 1.5rem;
-  margin-right: 1.5rem;
-  border: 0.25rem solid rgba(255, 255, 255, 0.3);
-  border-radius: 1rem;
-  text-align: center;
-}
-
-/* ANSWERS/RIGHT SECTION */
-.answer-section {
-  width: 100%;
-  display: flex;
-  gap: 2rem;
-
-  justify-content: space-between;
-}
-
-button {
-  width: 100%;
-  font-size: 1.25rem;
-  font-weight: 500;
-  text-transform: uppercase;
-  color: var(--light);
-  background-color: var(--primary);
-  border-radius: 1rem;
-  display: flex;
-  padding: 1rem;
-  justify-content: center;
-  align-items: center;
-  border: 0.25rem solid rgba(255, 255, 255, 0.3);
-  cursor: pointer;
-}
-
-.correct {
-  background-color: var(--accent);
-}
-
-.incorrect {
-  background-color: var(--primary);
-}
-
-button:hover {
-  background-color: var(--accent);
-  color: var(--dark);
-}
-
-button:focus {
-  outline: none;
-}
-
-button svg {
-  margin-right: 0.25rem;
+  width: 100vw;
+  height: 100vh;
 }

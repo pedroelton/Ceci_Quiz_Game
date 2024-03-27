@@ -1,0 +1,238 @@
+:root {
+  --primary: #990000;
+  --secondary: #3a519f;
+  --accent: #b0cb1f;
+  --dark: #1b1c1e;
+  --light: #ffffff;
+  --light-transparent: #ffffffd8;
+}
+
+* {
+  font-family: "Poppins", sans-serif;
+  color: var(--dark);
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+.landingPage-container {
+  height: 100vh;
+  width: 100vw;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.landingPage-navbar {
+  width: 100%;
+  padding: 32px;
+  position: absolute;
+  top: 0;
+  left: 0;
+  /* border-bottom: 1px solid rgba(0, 0, 0, 0.2); */
+}
+
+.landingPage-logo {
+  width: 4rem;
+}
+
+.landingPage-content {
+  width: 80vw;
+  height: 100%;
+  background-image: none;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.landingPage-content_left {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+}
+.landingPage-content_text {
+  display: flex;
+  height: 100%;
+  flex-direction: column;
+  justify-content: center;
+  gap: 16px;
+}
+
+.landingPage-content_left h1 {
+  font-size: 2.5rem;
+}
+
+.landingPage-content_left p {
+  font-size: 1.25rem;
+}
+
+.landingPage-content_left button {
+  display: flex;
+  padding: 1rem 1.5rem;
+  font-size: 1.25rem;
+  font-weight: 500;
+  text-transform: uppercase;
+  color: var(--light);
+  background-color: var(--primary);
+  border-radius: 1rem;
+  justify-content: center;
+  align-items: center;
+  border: 0.25rem solid rgba(255, 255, 255, 0.3);
+  cursor: pointer;
+  max-width: 20rem;
+}
+
+.landingPage-content_left button:hover {
+  background-color: var(--accent);
+  color: var(--dark);
+}
+
+.landingPage-content_left button:focus {
+  outline: none;
+}
+
+.landingPage-content_left button svg {
+  margin-right: 0.25rem;
+}
+
+.landingPage-content_right {
+  background-image: url("../../img/img-ui/schoolWallpaper.webp");
+  background-size: cover;
+  background-position: top right;
+  height: 100%;
+  width: 50%;
+  position: absolute;
+  top: 0;
+  right: 0;
+  display: flex;
+  justify-content: flex-end;
+  align-items: flex-start;
+  overflow: hidden;
+}
+
+.landingPage-container footer {
+  width: 100%;
+  padding: 1rem;
+  text-align: left;
+  font-size: 0.8rem;
+  z-index: 9;
+}
+
+.landingPage-container footer a {
+  color: var(--primary);
+}
+
+.landingPage-container footer a:hover {
+  color: var(--accent);
+}
+
+/* Media Queries */
+
+@media (min-width: 320px) and (max-width: 767px) {
+  .landingPage-content_left {
+    justify-content: space-between;
+    height: 100%;
+    width: 100%;
+  }
+  .landingPage-navbar {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 16px;
+  }
+  .landingPage-content_right {
+    display: none;
+  }
+  .landingPage-content_left h1 {
+    text-align: center;
+    font-size: 2rem;
+  }
+
+  .landingPage-content_left p {
+    text-align: center;
+  }
+  .landingPage-content_left button {
+    width: 100%;
+    max-width: 100%;
+  }
+  .landingPage-container footer {
+    text-align: center;
+  }
+}
+@media (max-width: 768px) {
+  /* Tablet and smaller devices */
+  .landingPage-content_left {
+    justify-content: space-between;
+    height: 100%;
+    width: 100%;
+  }
+  .landingPage-navbar {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 16px;
+  }
+  .landingPage-content_right {
+    display: none;
+  }
+  .landingPage-content_left h1 {
+    text-align: center;
+  }
+
+  .landingPage-content_left p {
+    text-align: center;
+    font-size: 1rem;
+  }
+  .landingPage-content_left button {
+    width: 100%;
+    max-width: 100%;
+  }
+  .landingPage-container footer {
+    text-align: center;
+  }
+}
+
+@media (min-width: 768px) and (max-width: 1024px) {
+  /* Landscape Laptops */
+  .landingPage-content_left {
+    justify-content: space-between;
+    height: 100%;
+    width: 100%;
+  }
+  .landingPage-navbar {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 16px;
+  }
+  .landingPage-content_right {
+    display: none;
+  }
+  .landingPage-content_left h1 {
+    text-align: center;
+  }
+
+  .landingPage-content_left p {
+    text-align: center;
+    font-size: 1rem;
+  }
+  .landingPage-content_left button {
+    width: 100%;
+    max-width: 100%;
+  }
+  .landingPage-container footer {
+    text-align: center;
+  }
+}
+
+@media (min-width: 1025px) and (max-width: 1440px) {
+  /* Laptops */
+  .landingPage-content {
+    width: 100%;
+    height: 100%;
+    padding: 0 32px;
+    background-image: none;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+}

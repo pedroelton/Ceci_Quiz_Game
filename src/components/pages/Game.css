@@ -213,6 +213,14 @@
     width: 100%;
     text-align: center;
   }
+  .answer-section button:hover {
+    background-color: var(--primary);
+    color: var(--light);
+  }
+  .answer-section button:active {
+    background-color: var(--accent);
+    color: var(--dark);
+  }
 }
 
 @media (min-width: 370px) and (max-width: 767px) {
@@ -268,6 +276,14 @@
     width: 100%;
     text-align: center;
   }
+  .answer-section button:hover {
+    background-color: var(--primary);
+    color: var(--light);
+  }
+  .answer-section button:active {
+    background-color: var(--accent);
+    color: var(--dark);
+  }
 }
 
 @media (min-width: 768px) and (max-width: 1024px) {
@@ -307,6 +323,14 @@
   .game-container footer {
     padding: 0.5rem;
     width: 100%;
+  }
+  .answer-section button:hover {
+    background-color: var(--primary);
+    color: var(--light);
+  }
+  .answer-section button:active {
+    background-color: var(--accent);
+    color: var(--dark);
   }
 }
 

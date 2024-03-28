@@ -164,6 +164,10 @@
   .landingPage-container footer {
     text-align: center;
   }
+  .answer-section button:active {
+    background-color: var(--accent);
+    color: var(--dark);
+  }
 }
 @media (max-width: 768px) {
   /* Tablet and smaller devices */
@@ -195,6 +199,10 @@
   }
   .landingPage-container footer {
     text-align: center;
+  }
+  .answer-section button:active {
+    background-color: var(--accent);
+    color: var(--dark);
   }
 }
 
@@ -233,6 +241,10 @@
   .landingPage-container footer {
     text-align: center;
   }
+  .answer-section button:active {
+    background-color: var(--accent);
+    color: var(--dark);
+  }
 }
 
 @media (min-width: 1025px) and (max-width: 1365px) {
@@ -261,6 +273,10 @@
   .landingPage-content_left p {
     font-size: 1.5rem;
   }
+  .answer-section button:active {
+    background-color: var(--accent);
+    color: var(--dark);
+  }
 }
 @media (min-width: 1366px) {
   /* Laptops */
@@ -286,5 +302,9 @@
 
   .landingPage-content_left p {
     font-size: 1.5rem;
+  }
+  .answer-section button:active {
+    background-color: var(--accent);
+    color: var(--dark);
   }
 }

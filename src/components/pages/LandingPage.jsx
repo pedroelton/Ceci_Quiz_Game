@@ -1,6 +1,7 @@
 import React from "react";
 import "./LandingPage.css";
 import Logo from "../Logo";
+import schoolWallpaper from "../../img/img-ui/schoolWallpaper.webp";
 
 export default function LandingPage({ onButtonClick }) {
   return (
@@ -23,7 +24,7 @@ export default function LandingPage({ onButtonClick }) {
           <button onClick={onButtonClick}>Start Quiz</button>
         </div>
         <div className="landingPage-content_right">
-          {/* <img src={schoolWallpaper} alt="CECI School logo" /> */}
+          <img src={schoolWallpaper} alt="CECI School logo" />
         </div>
       </div>
       {/* End Landing page Content */}

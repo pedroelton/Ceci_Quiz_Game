@@ -1,9 +1,23 @@
-import React from "react";
+import React, { useState } from "react";
 import "./LandingPage.css";
 import Logo from "../Logo";
 import schoolWallpaper from "../../img/img-ui/schoolWallpaper.webp";
 
-export default function LandingPage({ onButtonClick }) {
+export default function LandingPage({ onButtonClick, onThemeSelected }) {
+  const [selectedTheme, setSelectedTheme] = useState("");
+
+  const handleThemeChange = (event) => {
+    setSelectedTheme(event.target.value);
+  };
+
+  const isButtonDisabled = !selectedTheme; // Disable button if no theme is chosen
+
+  const handleClick = () => {
+    if (selectedTheme) {
+      onButtonClick(selectedTheme);
+    }
+  };
+
   return (
     <section className="landingPage-container">
       {/* Start Navbar */}
@@ -21,11 +35,20 @@ export default function LandingPage({ onButtonClick }) {
             <h1>Welcome to CECI Quiz App!</h1>
             <p>Test your knowledge and have fun!</p>
           </div>
-           <button
+          <select
+            value={selectedTheme}
+            onChange={handleThemeChange}
+            className="landingPage-content_selection"
+          >
+            <option value="">-- Select Theme --</option>
+            <option value="literature">Literature</option>
+            {/* Add more theme options here */}
+          </select>
+          <button
             disabled={isButtonDisabled}
             onClick={handleClick}
             className={`start-quiz-button ${
-              isButtonDisabled ? "disabled-style" : ""
+              isButtonDisabled ? "landingPage-content_left disabled-style" : ""
             }`}
           >
             Start Quiz

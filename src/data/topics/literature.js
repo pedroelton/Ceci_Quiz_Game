@@ -1,4 +1,4 @@
-export const questions = [
+export const literature = [
   {
     questionText: "What word rhymes with CAT?",
     answerOptions: [
@@ -133,6 +133,15 @@ export const questions = [
       { answerText: "The hero", isCorrect: true },
       { answerText: "The ending", isCorrect: false },
       { answerText: "The title", isCorrect: false },
+    ],
+  },
+  {
+    questionText: "What happens at the end of a story?",
+    answerOptions: [
+      { answerText: "The beginning", isCorrect: false },
+      { answerText: "The middle", isCorrect: false },
+      { answerText: "The ending", isCorrect: true },
+      { answerText: "The pictures", isCorrect: false },
     ],
   },
   {

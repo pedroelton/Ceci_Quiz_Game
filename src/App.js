@@ -3,18 +3,20 @@ import LandingPage from "./components/pages/LandingPage";
 import Game from "../src/components/pages/Game";
 
 export default function App() {
-  const [showOnboarding, setShowOnboarding] = useState(true); // State to control display
+  const [showOnboarding, setShowOnboarding] = useState(true);
+  const [theme, setTheme] = useState(null);
 
-  const handleStartGame = () => {
-    setShowOnboarding(false); // Hide onboarding on button click
+  const handleStartGame = (selectedTheme) => {
+    setShowOnboarding(false);
+    setTheme(selectedTheme);
   };
 
   return (
     <div>
       {showOnboarding ? (
-        <LandingPage onButtonClick={handleStartGame} /> // Render LandingPage
+        <LandingPage onButtonClick={handleStartGame} />
       ) : (
-        <Game /> // Render Game
+        <Game theme={theme} />
       )}
     </div>
   );

@@ -1,5 +1,5 @@
 import React, { useState } from "react";
-import { questions } from "../../data/questions";
+import { literature } from "../../data/topics/literature";
 import "./Game.css";
 
 function Game() {
@@ -13,7 +13,7 @@ function Game() {
     }
 
     const nextQuestion = currentQuestion + 1;
-    if (nextQuestion < questions.length) {
+    if (nextQuestion < literature.length) {
       setCurrentQuestion(nextQuestion);
     } else {
       setShowScore(true);
@@ -24,18 +24,18 @@ function Game() {
       <div className="app">
         {showScore ? (
           <div className="score-section">
-            <h2>{/* You scored {score} out of {questions.length} */}</h2>
+            <h2>{/* You scored {score} out of {literature.length} */}</h2>
             {/* Conditional message based on score */}
-            {score === questions.length && <h2>WOW! IT'S A PERFECT SCORE</h2>}
-            {score >= (2 * questions.length) / 3 &&
-              score < questions.length && (
+            {score === literature.length && <h2>WOW! IT'S A PERFECT SCORE</h2>}
+            {score >= (2 * literature.length) / 3 &&
+              score < literature.length && (
                 <h2>
-                  Cool, you made {score} out of {questions.length} right!
+                  Cool, you made {score} out of {literature.length} right!
                 </h2>
               )}
-            {score < questions.length / 2 && (
+            {score < literature.length / 2 && (
               <h2>
-                You just made {score} out of {questions.length}, do you want to
+                You just made {score} out of {literature.length}, do you want to
                 try again!?
               </h2>
             )}
@@ -47,22 +47,25 @@ function Game() {
           <>
             <div className="question-section">
               <div className="question-count">
-                <span>Question {currentQuestion + 1}</span>/{questions.length}
+                <span>Question {currentQuestion + 1}</span>/{literature.length}
               </div>
               <div className="question-text">
-                {questions[currentQuestion].questionText}
+                {literature[currentQuestion].questionText}
               </div>
             </div>
             <div className="answer-section">
-              {questions[currentQuestion].answerOptions.map((answerOption) => (
-                <button
-                  onClick={() =>
-                    handleAnswerOptionClick(answerOption.isCorrect)
-                  }
-                >
-                  {answerOption.answerText}
-                </button>
-              ))}
+              {literature[currentQuestion].answerOptions.map(
+                (answerOption, index) => (
+                  <button
+                    key={index}
+                    onClick={() =>
+                      handleAnswerOptionClick(answerOption.isCorrect)
+                    }
+                  >
+                    {answerOption.answerText}
+                  </button>
+                )
+              )}
             </div>
           </>
         )}

@@ -145,12 +145,79 @@ export const literature = [
     ],
   },
   {
-    questionText: "What happens at the end of a story?",
+    questionText:
+      "Cinderella's fairy godmother turned a __________ into a carriage.",
     answerOptions: [
-      { answerText: "The beginning", isCorrect: false },
-      { answerText: "The middle", isCorrect: false },
-      { answerText: "The ending", isCorrect: true },
-      { answerText: "The pictures", isCorrect: false },
+      { answerText: "An Apple", isCorrect: false },
+      { answerText: "A Pumpkin", isCorrect: true },
+      { answerText: "A Pear", isCorrect: false },
+      { answerText: "A Watermelon", isCorrect: false },
+    ],
+  },
+  {
+    questionText:
+      "Cinderella's fairy godmother turned a __________ into a carriage.",
+    answerOptions: [
+      { answerText: "An Apple", isCorrect: false },
+      { answerText: "A Pumpkin", isCorrect: true },
+      { answerText: "A Pear", isCorrect: false },
+      { answerText: "A Watermelon", isCorrect: false },
+    ],
+  },
+  {
+    questionText: "What did Little Red Riding Hood bring to her grandma?",
+    answerOptions: [
+      { answerText: "A Bunch of Flowers", isCorrect: false },
+      { answerText: "A New Dress", isCorrect: false },
+      { answerText: "A Basket of food", isCorrect: true },
+      { answerText: "A Wolf", isCorrect: false },
+    ],
+  },
+  {
+    questionText:
+      "What magical words did Cinderella's fairy Godmother use to make her pumpkin carriage appear?",
+    answerOptions: [
+      { answerText: "Abracadabra", isCorrect: false },
+      { answerText: "Levioooosa", isCorrect: false },
+      { answerText: "Bibbidi-Bobbidi-Boo", isCorrect: true },
+      { answerText: "Open Sesame", isCorrect: false },
+    ],
+  },
+  {
+    questionText: "Who wished for three wishes from a genie?",
+    answerOptions: [
+      { answerText: "Jack and the Beanstalk", isCorrect: false },
+      { answerText: "The Three Musketeers", isCorrect: false },
+      { answerText: "Sleeping Beauty", isCorrect: false },
+      { answerText: "Aladdin", isCorrect: true },
+    ],
+  },
+  {
+    questionText: "What color is Snow White's hair?",
+    answerOptions: [
+      { answerText: "White", isCorrect: false },
+      { answerText: "Blond", isCorrect: false },
+      { answerText: "Red", isCorrect: false },
+      { answerText: "Black", isCorrect: true },
+    ],
+  },
+  {
+    questionText: "What magical power does Elsa from Frozen have?",
+    answerOptions: [
+      { answerText: "Making ice and snow", isCorrect: true },
+      { answerText: "Talking to animals", isCorrect: false },
+      { answerText: "Super strength", isCorrect: false },
+      { answerText: "Flying", isCorrect: false },
+    ],
+  },
+  {
+    questionText:
+      "In Frozen, Olaf the snowman dreams of one thing. What is it?",
+    answerOptions: [
+      { answerText: "Summer", isCorrect: true },
+      { answerText: "Winter", isCorrect: false },
+      { answerText: "A hug", isCorrect: false },
+      { answerText: "Making friends", isCorrect: false },
     ],
   },
 ];

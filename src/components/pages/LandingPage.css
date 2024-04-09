@@ -99,6 +99,19 @@
   margin-right: 0.25rem;
 }
 
+.landingPage-content_left .start-quiz-button.disabled-style {
+  /* Styles for the disabled button appearance, e.g., */
+  background-color: #9c9c9c;
+  color: #666;
+  cursor: not-allowed;
+}
+
+.landingPage-content_selection {
+  padding: 1rem;
+  border: 1px var(--primary) solid;
+  width: 80%;
+}
+
 .landingPage-content_right {
   /* background-image: url("../../img/img-ui/schoolWallpaper.webp"); */
   background-size: cover;

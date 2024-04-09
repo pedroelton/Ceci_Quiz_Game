@@ -21,7 +21,15 @@ export default function LandingPage({ onButtonClick }) {
             <h1>Welcome to CECI Quiz App!</h1>
             <p>Test your knowledge and have fun!</p>
           </div>
-          <button onClick={onButtonClick}>Start Quiz</button>
+           <button
+            disabled={isButtonDisabled}
+            onClick={handleClick}
+            className={`start-quiz-button ${
+              isButtonDisabled ? "disabled-style" : ""
+            }`}
+          >
+            Start Quiz
+          </button>
         </div>
         <div className="landingPage-content_right">
           <img src={schoolWallpaper} alt="CECI School logo" />

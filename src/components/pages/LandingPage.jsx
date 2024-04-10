@@ -1,9 +1,11 @@
+// LandingPage.jsx
 import React, { useState } from "react";
+import PropTypes from "prop-types";
 import "./LandingPage.css";
 import Logo from "../Logo";
 import schoolWallpaper from "../../img/img-ui/schoolWallpaper.webp";
 
-export default function LandingPage({ onButtonClick, onThemeSelected }) {
+export default function LandingPage({ onButtonClick }) {
   const [selectedTheme, setSelectedTheme] = useState("");
 
   const handleThemeChange = (event) => {
@@ -42,6 +44,7 @@ export default function LandingPage({ onButtonClick, onThemeSelected }) {
           >
             <option value="">-- Select Theme --</option>
             <option value="literature">Literature</option>
+            <option value="art">Art (in progress)</option>
             {/* Add more theme options here */}
           </select>
           <button
@@ -67,3 +70,7 @@ export default function LandingPage({ onButtonClick, onThemeSelected }) {
     </section>
   );
 }
+
+LandingPage.propTypes = {
+  onButtonClick: PropTypes.func.isRequired,
+};

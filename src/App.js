@@ -1,23 +1,24 @@
 import React, { useState } from "react";
 import LandingPage from "./components/pages/LandingPage";
-import Game from "../src/components/pages/Game";
+import Game from "./components/pages/Game";
 
-export default function App() {
-  const [showOnboarding, setShowOnboarding] = useState(true);
-  const [theme, setTheme] = useState(null);
+function App() {
+  const [selectedTheme, setSelectedTheme] = useState("");
 
-  const handleStartGame = (selectedTheme) => {
-    setShowOnboarding(false);
-    setTheme(selectedTheme);
+  const handleButtonClick = (theme) => {
+    setSelectedTheme(theme);
   };
 
   return (
-    <div>
-      {showOnboarding ? (
-        <LandingPage onButtonClick={handleStartGame} />
+    <div className="App">
+      {/* Conditional rendering based on whether a theme is selected */}
+      {selectedTheme ? (
+        <Game selectedTheme={selectedTheme} />
       ) : (
-        <Game theme={theme} />
+        <LandingPage onButtonClick={handleButtonClick} />
       )}
     </div>
   );
 }
+
+export default App;

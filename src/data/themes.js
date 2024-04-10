@@ -1,12 +1,8 @@
 // src/data/themes.js
 import { literature } from "./topics/literature";
-// import { chemistry } from "./chemistry";
-// import { math } from "./math";
-// import { history } from "./history";
+// import { art } from "./topics/art";
 
 export const themes = {
   literature,
-  // chemistry,
-  // math,
-  // history,
+  // art,
 };

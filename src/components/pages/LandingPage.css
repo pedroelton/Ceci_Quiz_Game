@@ -101,8 +101,8 @@
 
 .landingPage-content_left .start-quiz-button.disabled-style {
   /* Styles for the disabled button appearance, e.g., */
-  background-color: #9c9c9c;
-  color: #666;
+  background-color: #cecece;
+  color: #999;
   cursor: not-allowed;
 }
 

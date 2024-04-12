@@ -85,6 +85,20 @@
   cursor: pointer;
   max-width: 20rem;
 }
+.landingPage-content_left .start-quiz-button.disabled-style {
+  display: flex;
+  padding: 1rem 1.5rem;
+  font-size: 1.25rem;
+  font-weight: 500;
+  text-transform: uppercase;
+  color: #999;
+  background-color: #cecece;
+  border-radius: 1rem;
+  justify-content: center;
+  align-items: center;
+  cursor: not-allowed;
+  max-width: 20rem;
+}
 
 .landingPage-content_left button:hover {
   background-color: var(--accent);
@@ -97,13 +111,6 @@
 
 .landingPage-content_left button svg {
   margin-right: 0.25rem;
-}
-
-.landingPage-content_left .start-quiz-button.disabled-style {
-  /* Styles for the disabled button appearance, e.g., */
-  background-color: #cecece;
-  color: #999;
-  cursor: not-allowed;
 }
 
 .landingPage-content_selection {
@@ -173,8 +180,8 @@
   .landingPage-content_left h1 {
     text-align: center;
     font-size: 2rem;
+    margin-top: 3rem;
   }
-
   .landingPage-content_left p {
     text-align: center;
   }
@@ -190,7 +197,19 @@
     background-color: var(--accent);
     color: var(--dark);
   }
+  .landingPage-content_selection {
+    padding: 1rem;
+    border: 1px var(--primary) solid;
+    width: 100%;
+  }
+  .landingPage-content_left .start-quiz-button.disabled-style {
+    display: flex;
+    padding: 1rem;
+    max-width: 100%;
+    max-height: 4rem;
+  }
 }
+
 @media (max-width: 768px) {
   /* Tablet and smaller devices */
   .landingPage-content_left {
@@ -209,6 +228,7 @@
   }
   .landingPage-content_left h1 {
     text-align: center;
+    font-size: 3rem;
   }
 
   .landingPage-content_left p {
@@ -225,6 +245,22 @@
   .answer-section button:active {
     background-color: var(--accent);
     color: var(--dark);
+  }
+  .landingPage-content_selection {
+    padding: 1rem;
+    border: 1px var(--primary) solid;
+    width: 100%;
+  }
+  .landingPage-content_left .start-quiz-button.disabled-style {
+    display: flex;
+    padding: 1rem;
+    max-width: 100%;
+    max-height: 4rem;
+  }
+  .landingPage-content_left button {
+    width: 100%;
+    max-width: 100%;
+    margin-bottom: 2rem;
   }
 }
 
@@ -300,6 +336,7 @@
     color: var(--dark);
   }
 }
+
 @media (min-width: 1366px) {
   /* Laptops */
   .landingPage-content {

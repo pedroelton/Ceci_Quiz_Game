@@ -370,7 +370,7 @@
 
 /* This will apply to iPhone X and newer */
 @media only screen and (min-device-width: 375px) and (max-device-width: 812px) and (-webkit-min-device-pixel-ratio: 3) {
-  .landingPage-content_selection {
+  select {
     padding: 1rem;
     width: 100%;
   }
@@ -378,7 +378,7 @@
 
 /* This will apply to iPhone 6, iPhone 6s, iPhone 7, iPhone 8 */
 @media only screen and (min-device-width: 375px) and (max-device-width: 667px) and (-webkit-min-device-pixel-ratio: 2) {
-  .landingPage-content_selection {
+  select {
     padding: 1rem;
     width: 100%;
   }
@@ -386,7 +386,7 @@
 
 /* This will apply to iPhone 5, iPhone 5s, iPhone 5c, iPhone SE */
 @media only screen and (min-device-width: 320px) and (max-device-width: 568px) and (-webkit-min-device-pixel-ratio: 2) {
-  .landingPage-content_selection {
+  select {
     padding: 1rem;
     width: 100%;
   }

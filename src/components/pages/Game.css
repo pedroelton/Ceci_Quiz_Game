@@ -232,13 +232,8 @@
     width: 100%;
     text-align: center;
   }
-  .answer-section button:hover {
-    background-color: var(--primary);
-    color: var(--light);
-  }
   .answer-section button:active {
-    background-color: var(--accent);
-    color: var(--dark);
+    transform: scale(0.8); /* Shrink by 20% */
   }
 }
 
@@ -295,13 +290,8 @@
     width: 100%;
     text-align: center;
   }
-  .answer-section button:hover {
-    background-color: var(--primary);
-    color: var(--light);
-  }
   .answer-section button:active {
-    background-color: var(--accent);
-    color: var(--dark);
+    transform: scale(0.8); /* Shrink by 20% */
   }
 }
 
@@ -343,17 +333,13 @@
     padding: 0.5rem;
     width: 100%;
   }
-  .answer-section button:hover {
-    background-color: var(--primary);
-    color: var(--light);
-  }
-  .answer-section button:active {
-    background-color: var(--accent);
-    color: var(--dark);
-  }
+
   .score-section {
     padding: 1rem;
     min-height: 75vh;
+  }
+  .answer-section button:active {
+    transform: scale(0.8); /* Shrink by 20% */
   }
 }
 
@@ -364,14 +350,28 @@
     height: 100%;
   }
   .answer-section button:hover {
+    background-color: var(--primary);
+    color: var(--light);
+  }
+  .answer-section button:active {
     background-color: var(--accent);
     color: var(--dark);
+  }
+  .answer-section button:active {
+    background-color: var(--accent);
+    color: var(--dark);
+    transform: scale(0.8); /* Shrink by 20% */
   }
 }
 
 @media (min-width: 1441px) {
   .answer-section button:hover {
+    background-color: var(--primary);
+    color: var(--light);
+  }
+  .answer-section button:active {
     background-color: var(--accent);
     color: var(--dark);
+    transform: scale(0.8); /* Shrink by 20% */
   }
 }

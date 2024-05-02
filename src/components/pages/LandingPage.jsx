@@ -42,7 +42,7 @@ export default function LandingPage({ onButtonClick }) {
             onChange={handleThemeChange}
             className="landingPage-content_selection"
           >
-            <option value="">-- Select a Topic to Start --</option>
+            <option value="">--Select a Topic to Start--</option>
             <option value="literature">Literature</option>
             {/* <option value="marineLife">Marine Life</option> */}
             {/* <option value="art">Art (in progress)</option> */}

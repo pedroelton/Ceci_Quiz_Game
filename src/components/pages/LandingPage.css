@@ -257,6 +257,7 @@
     max-width: 100%;
     max-height: 4rem;
   }
+
   .landingPage-content_left button {
     width: 100%;
     max-width: 100%;
@@ -268,15 +269,18 @@
   /* Landscape Laptops */
   .landingPage-content_left {
     justify-content: space-between;
+    align-items: center;
     height: 100%;
     width: 100%;
   }
+
   .landingPage-navbar {
     display: flex;
     justify-content: center;
     align-items: center;
     padding: 16px;
   }
+
   .landingPage-content_right {
     display: none;
   }
@@ -291,14 +295,28 @@
     text-align: center;
     font-size: 1.5rem;
   }
+
   .landingPage-content_left button {
     width: 100%;
     max-width: 100%;
     margin-bottom: 2rem;
   }
+
+  .landingPage-content_left select {
+    width: 100%;
+  }
+
+  .landingPage-content_left .start-quiz-button.disabled-style {
+    display: flex;
+    padding: 1rem;
+    max-width: 100%;
+    max-height: 4rem;
+  }
+
   .landingPage-container footer {
     text-align: center;
   }
+
   .answer-section button:active {
     background-color: var(--accent);
     color: var(--dark);

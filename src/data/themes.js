@@ -1,8 +1,8 @@
 // src/data/themes.js
 import { literature } from "./topics/literature";
-// import { art } from "./topics/art";
+// import { marineLife } from "./topics/marineLife";
 
 export const themes = {
   literature,
-  // art,
+  // marineLife,
 };

@@ -33,6 +33,11 @@ function Game({ selectedTheme }) {
       setShowScore(true);
     }
   };
+  const reloadButton = document.getElementById("reloadButton");
+
+  reloadButton.addEventListener("click", () => {
+    window.location.reload();
+  });
 
   return (
     <section className="game-container">
@@ -40,10 +45,15 @@ function Game({ selectedTheme }) {
         {showScore ? (
           <div className="score-section">
             <h2>
-              You scored {score} out of {questions.length}
+              {score === questions.length
+                ? "WOW! You did it! It's a perfect score!"
+                : `You scored ${score} out of ${questions.length}`}
             </h2>
             {/* Add conditional messages based on score */}
             {/* Restart button */}
+            <button id="reloadButton" className="reset-button">
+              Restart Game
+            </button>
           </div>
         ) : (
           <>

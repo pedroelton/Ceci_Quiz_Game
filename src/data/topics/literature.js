@@ -155,12 +155,11 @@ export const literature = [
     ],
   },
   {
-    questionText:
-      "Cinderella's fairy godmother turned a __________ into a carriage.",
+    questionText: "Snow White received one poisoned fruit. Which fruit was it?",
     answerOptions: [
-      { answerText: "An Apple", isCorrect: false },
-      { answerText: "A Pumpkin", isCorrect: true },
+      { answerText: "A Pumpkin", isCorrect: false },
       { answerText: "A Pear", isCorrect: false },
+      { answerText: "An Apple", isCorrect: true },
       { answerText: "A Watermelon", isCorrect: false },
     ],
   },
@@ -168,8 +167,8 @@ export const literature = [
     questionText: "What did Little Red Riding Hood bring to her grandma?",
     answerOptions: [
       { answerText: "A Bunch of Flowers", isCorrect: false },
-      { answerText: "A New Dress", isCorrect: false },
       { answerText: "A Basket of food", isCorrect: true },
+      { answerText: "A New Dress", isCorrect: false },
       { answerText: "A Wolf", isCorrect: false },
     ],
   },

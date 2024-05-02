@@ -33,11 +33,11 @@ function Game({ selectedTheme }) {
       setShowScore(true);
     }
   };
-  const reloadButton = document.getElementById("reloadButton");
+  // const reloadButton = document.getElementById("reloadButton");
 
-  reloadButton.addEventListener("click", () => {
-    window.location.reload();
-  });
+  // reloadButton.addEventListener("click", () => {
+  //   window.location.reload();
+  // });
 
   return (
     <section className="game-container">
@@ -51,7 +51,11 @@ function Game({ selectedTheme }) {
             </h2>
             {/* Add conditional messages based on score */}
             {/* Restart button */}
-            <button id="reloadButton" className="reset-button">
+            <button
+              id="reloadButton"
+              className="reset-button"
+              onClick={() => window.location.reload()}
+            >
               Restart Game
             </button>
           </div>

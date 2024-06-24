@@ -45,6 +45,7 @@ export default function LandingPage({ onButtonClick }) {
             <option value="">--Select a Topic to Start--</option>
             <option value="literature">Literature</option>
             <option value="marineLife">Marine Life</option>
+            <option value="forestAnimals">Forest Animals</option>
             {/* <option value="art">Art (in progress)</option> */}
             {/* Add more theme options here */}
           </select>

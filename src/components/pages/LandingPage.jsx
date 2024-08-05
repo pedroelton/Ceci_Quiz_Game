@@ -2,6 +2,7 @@
 import React, { useState } from "react";
 import PropTypes from "prop-types";
 import "./LandingPage.css";
+import "./popup.css";
 import Logo from "../Logo";
 import schoolWallpaper from "../../img/img-ui/schoolWallpaper.webp";
 
@@ -68,6 +69,23 @@ export default function LandingPage({ onButtonClick }) {
         <p>
           By <a href="https://ceci.jp">CECI Educational Academy</a>
         </p>
+        <button id="openPopup">Instructions</button>
+        <div id="popupContainer" className="popup-container">
+          <div className="popup">
+            <span id="closePopup" className="close-popup">
+              &times;
+            </span>
+            <h2 className="popup-title">CECI Quiz Game</h2>
+            <p className="popup-text">
+              After selecting a topic, a 24-question quiz with multiple answers
+              will appear. This quiz game doesn’t have images, it’s ideal when
+              the kids can read. The number of right answers will be displayed
+              on the end screen. The kids can answer in groups and vote for the
+              right answer.
+            </p>
+            <b>To close this popup, tap outside.</b>
+          </div>
+        </div>
       </footer>
     </section>
   );
@@ -76,3 +94,20 @@ export default function LandingPage({ onButtonClick }) {
 LandingPage.propTypes = {
   onButtonClick: PropTypes.func.isRequired,
 };
+// POP-UP
+
+document.getElementById("openPopup").addEventListener("click", function () {
+  document.getElementById("popupContainer").style.display = "flex";
+});
+
+document.getElementById("closePopup").addEventListener("click", function () {
+  document.getElementById("popupContainer").style.display = "none";
+});
+
+document
+  .getElementById("popupContainer")
+  .addEventListener("click", function (event) {
+    if (event.target === this) {
+      document.getElementById("popupContainer").style.display = "none";
+    }
+  });

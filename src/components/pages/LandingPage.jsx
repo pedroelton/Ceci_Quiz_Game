@@ -1,5 +1,4 @@
-// LandingPage.jsx
-import React, { useState } from "react";
+import React, { useState, useEffect } from "react";
 import PropTypes from "prop-types";
 import "./LandingPage.css";
 import "./popup.css";
@@ -20,6 +19,45 @@ export default function LandingPage({ onButtonClick }) {
       onButtonClick(selectedTheme);
     }
   };
+
+  useEffect(() => {
+    const openPopup = document.getElementById("openPopup");
+    const closePopup = document.getElementById("closePopup");
+    const popupContainer = document.getElementById("popupContainer");
+
+    if (openPopup && closePopup && popupContainer) {
+      openPopup.addEventListener("click", () => {
+        popupContainer.style.display = "flex";
+      });
+
+      closePopup.addEventListener("click", () => {
+        popupContainer.style.display = "none";
+      });
+
+      popupContainer.addEventListener("click", (event) => {
+        if (event.target === popupContainer) {
+          popupContainer.style.display = "none";
+        }
+      });
+
+      // Cleanup event listeners on component unmount
+      return () => {
+        openPopup.removeEventListener("click", () => {
+          popupContainer.style.display = "flex";
+        });
+
+        closePopup.removeEventListener("click", () => {
+          popupContainer.style.display = "none";
+        });
+
+        popupContainer.removeEventListener("click", (event) => {
+          if (event.target === popupContainer) {
+            popupContainer.style.display = "none";
+          }
+        });
+      };
+    }
+  }, []);
 
   return (
     <section className="landingPage-container">
@@ -94,20 +132,3 @@ export default function LandingPage({ onButtonClick }) {
 LandingPage.propTypes = {
   onButtonClick: PropTypes.func.isRequired,
 };
-// POP-UP
-
-document.getElementById("openPopup").addEventListener("click", function () {
-  document.getElementById("popupContainer").style.display = "flex";
-});
-
-document.getElementById("closePopup").addEventListener("click", function () {
-  document.getElementById("popupContainer").style.display = "none";
-});
-
-document
-  .getElementById("popupContainer")
-  .addEventListener("click", function (event) {
-    if (event.target === this) {
-      document.getElementById("popupContainer").style.display = "none";
-    }
-  });
